@@ -1,0 +1,35 @@
+div#pohi{
+    padding: 30px;
+    float: left;
+    background-color: darkblue;
+    border: 1px solid grey;
+    color: white;
+}
+h1,h3{
+    background-color: darkblue;
+    border: 1px solid grey;
+    color: white;
+}
+div#andmed{
+    padding: 30px;
+    float: left;
+    margin-left: 3% ;
+    border-left: solid 1px grey;
+    color: white;
+}
+div#lisa_andmed{
+    background-color: darkblue;
+    color: white;
+    border: 2px solid lightgrey;
+    padding: 10px;
+}
+a{
+    background-color: darkslateblue;
+    border: solid 1px lightgrey;
+    color: white;
+}
+div#andmed_style{
+    background-color: darkblue;
+    padding: 15px;
+    color: white;
+}
