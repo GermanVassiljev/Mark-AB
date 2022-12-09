@@ -1,4 +1,9 @@
 <?php
+session_start();
+if (!isset($_SESSION['tuvastamine'])) {
+    header('Location: ab_login_Mark.php');
+    exit();
+}
 require_once ('connect_mark.php');
 global $baas;
 //andmete lisamine tabelisse
@@ -21,6 +26,17 @@ if(isset($_REQUEST['kustutavorm'])){
     <title>Lilled</title>
     <link rel="stylesheet" type="text/css" href="style_mark.css">
 </head>
+<header>
+    <div>
+        <?php
+        //session_start();
+        echo $_SESSION['kasutaja'];
+        ?> on sisse logitud
+        <form action="logout_Mark.php" method="post">
+            <input type="submit" value="Logi välja" name="logout">
+        </form>
+    </div>
+</header>
 <body>
 <h1>Mark Andebaas "lilled"</h1>
 <div id="pohi">
@@ -34,7 +50,9 @@ if(isset($_REQUEST['kustutavorm'])){
             echo "<li><a href='?id=$id'>".$nimi."</a></li>";
         }
         echo "</ul>";
-        echo "<a href='?lisalill=jah'>Lisa lill</a>"
+        echo "<a href='?lisalill=jah'>Lisa lill</a>";
+        echo "<br>";
+        echo "<a href='https://github.com/GermanVassiljev/Mark-AB'>github</a>";
         ?>
 </div>
 <div id="andmed">

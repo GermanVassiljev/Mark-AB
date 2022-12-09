@@ -1,9 +1,9 @@
 <?php
 
-$kasutaja='Mark21';//Mark21
-$server='localhost';//d113377.mysql.zonevs.eu
-$andmebaas='Mark_andmed';//d113377_markul
-$salasyna='12345';//sieugfh0912
+$kasutaja='Mark21';//Mark21 / d113377_markul
+$server='localhost';//localhost / d113377.mysql.zonevs.eu
+$andmebaas='mark_andmed';//mark_andmed / d113377_baasmark
+$salasyna='12345';//12345 / sieugfh0912
 $baas=new mysqli($server,$kasutaja,$salasyna,$andmebaas);
 $baas->set_charset('UTF8');
 //CREATE TABLE lilled(
